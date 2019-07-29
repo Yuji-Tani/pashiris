@@ -14,7 +14,7 @@ ja:
       pashiri:
         id: ID
         name: 欲しいもの
-        iraisha: 頼んだ人
+        iraisha: 依頼人
         created_at: 登録日時
         updated_at: 更新日時
   date:
