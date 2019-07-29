@@ -1,0 +1,2 @@
+class Pashiri < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>欲しいもの</th>
+      <th>依頼人</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pashiris.each do |pashiri| %>
+      <tr>
+        <td><%= pashiri.name %></td>
+        <td><%= pashiri.iraisha %></td>
+        <td><%= link_to 'しょうさい', pashiri %></td>
+        <td><%= link_to 'へんしゅう', edit_pashiri_path(pashiri) %></td>
+        <td><%= link_to 'さくじょ', pashiri, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新しいパシリを頼む', new_pashiri_path %>

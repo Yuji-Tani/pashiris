@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>欲しいもの</strong>
+  <%= @pashiri.name %>
+</p>
+
+<p>
+  <strong>依頼人</strong>
+  <%= @pashiri.iraisha %>
+</p>
+
+<%= link_to 'へんしゅう', edit_pashiri_path(@pashiri) %> |
+<%= link_to 'もどる', pashiris_path %>

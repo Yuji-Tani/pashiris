@@ -1,0 +1,27 @@
+<%= form_with(model: pashiri, local: true) do |form| %>
+  <% if pashiri.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pashiri.errors.count, "error") %> prohibited this pashiri from being saved:</h2>
+
+      <ul>
+      <% pashiri.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label '欲しいもの' %>
+    <%= form.text_field :name , :class=>'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label '依頼人' %>
+    <%= form.text_field :iraisha  , :class=>'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: 'btn btn-primary'%>
+  </div>
+<% end %>
