@@ -30,7 +30,7 @@ Things you may want to cover:
 $ git push heroku master
 ```
 
-# Migration
+## Migrate
 
 ```
 $ heroku run rake db:migrate 
