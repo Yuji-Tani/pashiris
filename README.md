@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Yuji-Tani/pashiris.svg?style=svg)](https://circleci.com/gh/Yuji-Tani/pashiris)
+
 # README
 
 This README would normally document whatever steps are necessary to get the
