@@ -22,26 +22,19 @@ Bundler version 2.0.2
 * Configuration
 
 * Database creation
+```
+$ rake db:create
+```
 
 * Database initialization
+```
+$ rake db:migrate
+```
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
-
-# pashiris
-
-## Deploy
-
 ```
 $ git push heroku master
-```
-
-## Migrate
-
-```
 $ heroku run rake db:migrate 
 ```
