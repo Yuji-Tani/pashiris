@@ -21,5 +21,17 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+
 # pashiris
+
+## Deploy
+
+```
+$ git push heroku master
+```
+
+# Migration
+
+```
+$ heroku run rake db:migrate 
+```
