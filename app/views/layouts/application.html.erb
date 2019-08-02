@@ -14,7 +14,9 @@
 
 <body>
 <div class="app-title navbar navbar-expand-md navbar-light bg-light">
-  <div class="navbar-brand"><%= link_to 'Pashiris', pashiris_path %></div>
+  <div class="navbar-brand">
+    <%= link_to image_tag('/image/pashiris_logo.png'), pashiris_path %>
+  </div>
 </div>
 <div class="container">
   <%= yield %>
